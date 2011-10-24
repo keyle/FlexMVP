@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<noben:BaseView xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" 
+				xmlns:noben="noben.*">
+	
+	<s:TextInput id="input" x="64" y="79" width="198" text="@{presenter.myInput}" />
+	<s:Button id="btn" x="296" y="76" width="145" height="25" label="woop woop" click="presenter.updateText()" />	
+	
+	<s:Label id="txt" x="488" y="84" text="{presenter.myText}" />
+	
+</noben:BaseView>

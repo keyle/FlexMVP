@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<noben:BaseView xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark" 
+				xmlns:mx="library://ns.adobe.com/flex/mx" 
+				xmlns:noben="noben.*" xmlns:behaviors="behaviors.*">
+	
+	<fx:Declarations>
+		<behaviors:AutoCapitalizeBehavior associatedObject='{input}' />
+	</fx:Declarations>
+	
+	<s:TextInput id="input" x="240" y="79" width="198" color="#1E8E00" text="@{presenter.myInput}">
+		<s:filters>
+			<s:DropShadowFilter distance="0" blurX="15" blurY="15" strength="0.2" />
+		</s:filters>
+	</s:TextInput>
+	
+	<s:Button id="btn" x="37" y="76" width="145" height="25" color="#884400" fontStyle="italic" label="I am different!" click="presenter.updateText()" />	
+	
+	<s:Label id="txt" x="488" y="84" color="#008093" text="{presenter.myText}" fontWeight="bold" />
+	
+</noben:BaseView>
